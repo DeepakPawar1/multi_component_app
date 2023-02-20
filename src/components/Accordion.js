@@ -10,6 +10,8 @@ const handleClick = (nextIndex) =>{
         setExpandedIndex(nextIndex);
     }
 };
+
+
 const renderedItems = items.map((item,index)=>{
     const isExpanded = index === expandedIndex;
     const icon  = <span>
@@ -18,11 +20,11 @@ const renderedItems = items.map((item,index)=>{
         return (
     <div key={item.id}>
 
-    <div className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer"
+    <div className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer dark:md:hover:bg-gray-300 "
      onClick={ () => handleClick(index)}>
         {item.label}{icon}
         </div>
-    {isExpanded && <div className="border-b p-5">{item.content}</div>}
+    {isExpanded && <div className="border-b p-5 bg-gray-200 ">{item.content}</div>}
     </div>
 
         )
