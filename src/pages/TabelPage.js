@@ -1,4 +1,4 @@
-import Table from "../components/Table";
+
 import SortableTable from "../components/SortableTable";
 function TablePage(){
     const data = [
@@ -21,7 +21,7 @@ function TablePage(){
     {
         label:'Score',
         render: (fruit)=> fruit.score,
-       sortValue: (fruit) => fruit.name
+       sortValue: (fruit) => fruit.score
     },
     ];
 return (
