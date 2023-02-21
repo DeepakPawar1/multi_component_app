@@ -38,4 +38,4 @@ function ButtonPage() {
   );
 }
 
-export default uttonPage;
+export default ButtonPage;
